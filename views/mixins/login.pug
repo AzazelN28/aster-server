@@ -1,0 +1,9 @@
+mixin login()
+  form(method="post",action="/login")
+    .input-group
+      label(for="email") Correo electrónico
+      input(type="email",name="email",id="email",value="")
+    .input-group
+      label(for="password") Contraseña
+      input(type="password",name="password",id="password",value="")
+    button(type="submit") Iniciar sesión

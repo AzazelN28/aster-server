@@ -1,0 +1,18 @@
+mixin register()
+  form(method="post",action="/register")
+    .input-group
+      label(for="username") Nombre de usuario
+      input(type="text",name="username",id="username",value="")
+    .input-group
+      label(for="email") Correo electrónico
+      input(type="email",name="email",id="email",value="")
+    .input-group
+      label(for="password") Contraseña
+      input(type="password",name="password",id="password",value="")
+    .input-group
+      label(for="passconf") Confirmar contraseña
+      input(type="password",name="passconf",id="passconf",value="")
+    .input-group
+      input(type="checkbox",name="eula",id="eula")
+      label(for="eula") He leído todas las mierdas
+    button(type="submit") Registrarse
